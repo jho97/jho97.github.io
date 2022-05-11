@@ -9,32 +9,43 @@
 </head>
 <body>
     <nav>
-        <a>About</a>
-        <a>Projects</a>
-        <a>Contact</a>
+        <a href="#about-container">About</a>
+        <a href="#projects-container">Projects</a>
+        <a href="#contact-container">Contact</a>
     </nav>
-    <h1>Jonathan Ho</h1>
 
-    <div class="video">
-        <video autoplay muted loop id="bgVideo">
-            <source src="JonathanWebVideo.MP4" type="video/mp4">
-        </video>
+    <div id="video-container">
+        <div id="inside-VC">
+            <video autoplay muted loop id="bgVideo">
+                <source src="JonathanWebVideo.MP4" type="video/mp4">
+            </video>
+        </div>
+            <h1>
+             Welcome, I'm 
+            <span id="highlight">Jonathan Ho</span>
+                    .
+            <br>
+            Check out my work
+            </h1>
+                <input type="button" value="click me" onclick="document.getElementById('about-container').scrollIntoView()"/>
     </div>
 
-    <div class="about-container">
+
+    <div id="about-container">
         <h2>About Me</h2>
+        <p>down down down</p>
     </div>
 
-    <div class="projects-container">
+    <div id="projects-container">
         <h2>Projects</h2>
     </div>
 
-    <div class="contact-container">
+    <div id="contact-container">
         <h2>Contact</h2>
     </div>
 
     <footer>
-        
+
     </footer>
 </body>
 </html>
