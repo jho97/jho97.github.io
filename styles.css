@@ -13,7 +13,7 @@ p {
 
 @keyframes slideHeaders {
     from {left: 0px;}
-    to {right: 300px;}
+    to {left: 300px;}
 }
 
 h2 {
@@ -22,6 +22,7 @@ h2 {
     font-size: 2.5rem;
     animation-name: slideHeaders; 
     animation-duration: 5s;
+    animation-iteration-count: 1;
 }
 
 nav {
