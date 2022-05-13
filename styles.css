@@ -11,18 +11,14 @@ p {
     font-family: 'Noto Serif', serif;
 }
 
-@keyframes slideHeaders {
-    from {left: 0px;}
-    to {left: 300px;}
+@keyframes slide {
+    100% { transform: translateX(100%) }
 }
 
 h2 {
     font-family: 'Noto Serif', serif;
     font-weight: bold;
     font-size: 2.5rem;
-    animation-name: slideHeaders; 
-    animation-duration: 5s;
-    animation-iteration-count: 1;
 }
 
 nav {
@@ -85,12 +81,15 @@ nav {
 
 
 #about-container {
+    position: relative;
     max-height: 10%;
     width: 100%;
     background-color: blanchedalmond;
 }
 
 #aboutTitle {
+    animation: slide 5s forwards;
+    position: absolute;
     text-align: center;
 }
 
